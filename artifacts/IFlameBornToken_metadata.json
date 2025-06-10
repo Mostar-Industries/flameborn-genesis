@@ -52,11 +52,11 @@
 	},
 	"sources": {
 		"FlameBornMinter.sol": {
-			"keccak256": "0xcfb24308beb6ee389d01083b3dd0c50a26aa763d859726204a4c8a62d4567649",
+			"keccak256": "0x4b06bd6887d2b62846a66da9f32f77e9418fd202baec76717133b5bb9e58a340",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d953f03b7a8b0ff78017fbdd2b9757bb37417ae05f64e47378c351273156f9a9",
-				"dweb:/ipfs/QmURPYhpesDrDqC3a3VYeyQ1xouwzGjvgLDV1Jc5Vqctsp"
+				"bzz-raw://447841bc54f5ccac02f845e2814843ff91ed79ea99ae850290643bf942691837",
+				"dweb:/ipfs/Qma87pC75kykqaTXeGVpJ9dyuGGwHtC51NFxawzjXMSHDV"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.0.0/contracts/access/AccessControl.sol": {

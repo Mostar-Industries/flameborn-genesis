@@ -429,11 +429,11 @@
 			]
 		},
 		"HealthActorRegistry.sol": {
-			"keccak256": "0x952b48f929543aa6ff67df6914dc4e5c14b24c74d704743a2e186cd7d096d90e",
+			"keccak256": "0x738dbc3f4eea7b201cd626b7d0e9fdd6476046d1f5ab966a496b5d098cde180b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa05b3c1964bf35a5a640f23c2f93c8d9c89cd0773a57ca724211f0efd3f580f",
-				"dweb:/ipfs/QmZb2kL5snqfQo76N2HPTjKY88STrTyk2Jga9XuyeY1vuK"
+				"bzz-raw://70e52536cf555c417e188df8f99b55ddd5b231ade47629893e02075ef55b2405",
+				"dweb:/ipfs/QmaBpBeo4ngWwG3Ed8jac39rBXjzd1mXsmvrE5a5G4trnd"
 			]
 		}
 	},

@@ -60,11 +60,11 @@
 			]
 		},
 		"DonationRouter.sol": {
-			"keccak256": "0x7f55eadd037b87c09161cc6984d95dcf5d5b7b59756860a5c4e32cfa8eefd92f",
+			"keccak256": "0xa9f37eaa62090d00ea8d399c0a2ba78036a5a3e68cd5330ced0403a2664ca24f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3e93a8132e664f48578af4d5e82b88b7c6c50d4c27273d4c23afcfc2d1b5c2c7",
-				"dweb:/ipfs/QmXuzuymUWTMNFUk9jNFFeWsJHSgDsUfDPKqmR16Af8uyH"
+				"bzz-raw://a320168994e8ebba6f2713a4b4ddb8f6e780e2a701144c72980b34b3ffaffa93",
+				"dweb:/ipfs/QmRKeckSpAUdCUvzSjkxFRjirdEnSQy3z6cYiEZ6gj5Zok"
 			]
 		}
 	},
