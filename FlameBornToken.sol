@@ -16,7 +16,7 @@ contract FlameBornToken is
     ERC20Burnable,
     ERC20Pausable,
     AccessControl{
-        
+
     string public constant name = "FlameBorn Token";
     string public constant symbol = "FLB";
     bytes32 public constant DEFAULT_ADMIN_ROLE = keccak256("DEFAULT_ADMIN_ROLE");
@@ -29,15 +29,14 @@ contract FlameBornToken is
     event MinterGranted(address indexed account);
     event PauserGranted(address indexed account);
 
-    constructor(address admin)
-        ERC20("FlameBorn Token", "FLB")
-        ERC20Permit("FlameBorn Token")
+    function initialize(address _admin)
+        external
     {
-        require(admin != address(0), "Invalid admin address");
-        _grantRole(DEFAULT_ADMIN_ROLE, admin);
-        _grantRole(MINTER_ROLE, admin);
-        _grantRole(PAUSER_ROLE, admin);
-        _mint(admin, 1_000_000 ether);
+        require(_admin != address(0), "Invalid admin address");
+        _grantRole(DEFAULT_ADMIN_ROLE, _admin);
+        _grantRole(MINTER_ROLE, _admin);
+        _grantRole(PAUSER_ROLE, _admin);
+        _mint(_admin, 1_000_000 ether);
     }
 
     function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) {
