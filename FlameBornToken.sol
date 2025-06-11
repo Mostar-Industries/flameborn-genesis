@@ -15,8 +15,11 @@ contract FlameBornToken is
     ERC20Burnable,
     ERC20Pausable,
     AccessControl
-{
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER");
+{=igfdfg 
+p 0 
+"L>KJNHbgm
++-*}":{p987T6EWA1
+6+581   "    bytes32 public constant MINTER_ROLE = keccak256("MINTER");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER");
     bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
 
