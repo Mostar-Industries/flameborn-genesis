@@ -18,6 +18,9 @@ contract FlameBornToken is
 {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER");
+    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+
+    using AccessControl for AccessControl;
 
     event MinterGranted(address indexed account);
     event PauserGranted(address indexed account);
@@ -57,44 +60,41 @@ contract FlameBornToken is
         emit PauserGranted(account);
     }
 
-    // Only need to override the "most derived" contracts for each hook.
-    function _update(address from, address to, uint256 value)
-    internal
-    virtual
-        override(ERC20, ERC20Pausable, ERC20Votes)
+    // Override required due to multiple inheritance of _update from ERC20, ERC20Pausable, and ERC20Votes
+    // Mark this function as virtual to avoid override errors
+    function _beforeTokenTransfer(address from, address to, uint256 amount)
+        internal
+        override(ERC20, ERC20Pausable) // Correctly specify overridden contracts
     {
-        super._update(from, to, value);
+        super._beforeTokenTransfer(from, to, amount); // Call super function
     }
 
+    // Override required for ERC20Votes and ERC20Burnable
     function _afterTokenTransfer(address from, address to, uint256 amount)
         internal
-        virtual
-        override(ERC20, ERC20Pausable, ERC20Votes)
+        override(ERC20Votes) // Correctly specify overridden contract
     {
-        super._afterTokenTransfer(from, to, amount);
+        super._afterTokenTransfer(from, to, amount); // Call super function
     }
 
     function _mint(address to, uint256 amount)
         internal
-        virtual
-        override(ERC20, ERC20Pausable, ERC20Votes)
+        override(ERC20, ERC20Votes) // Correctly specify overridden contracts
     {
-        super._mint(to, amount);
+        super._mint(to, amount); // Call super function
     }
 
     function _burn(address account, uint256 amount)
         internal
-        virtual
-        override(ERC20, ERC20Pausable, ERC20Votes)
+        override(ERC20, ERC20Votes) // Correctly specify overridden contracts
     {
-        super._burn(account, amount);
+        super._burn(account, amount); // Call super function
     }
 
-    // OpenZeppelin v5: nonces is in Nonces, not ERC20Permit
     function nonces(address owner)
         public
         view
-        override(Nonces)
+        override(ERC20Permit)
         returns (uint256)
     {
         return super.nonces(owner);
