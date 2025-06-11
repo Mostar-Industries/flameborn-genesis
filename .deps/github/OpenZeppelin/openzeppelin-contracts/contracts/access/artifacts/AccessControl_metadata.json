@@ -289,7 +289,7 @@
 		"compilationTarget": {
 			".deps/github/OpenZeppelin/openzeppelin-contracts/contracts/access/AccessControl.sol": "AccessControl"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
