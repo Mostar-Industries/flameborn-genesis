@@ -10,7 +10,7 @@ A decentralized humanitarian initiative to eliminate disease outbreaks in Africa
 
 **Flameborn** is a blockchain-based system that delivers fast, traceable, and community-driven financial support to real health actors in crisis zones. Powered by the **FLB token (BEP-20)** on Binance Smart Chain, the platform automates funding and accountability using smart contracts and decentralized governance.
 
-- Direct donor-to-doctor funding with no intermediaries
+- Direct donor-to-HealthActor (Hospital or Mobile Clinic) funding with no intermediaries
 - Smart-contract-verified health actor registry
 - Every donation mints FLB tokens and triggers transparent payments
 
