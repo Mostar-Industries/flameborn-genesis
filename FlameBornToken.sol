@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.20;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.0.0/contracts/token/ERC20/ERC20.sol";
@@ -14,16 +15,16 @@ contract FlameBornToken is
     ERC20Votes,
     ERC20Burnable,
     ERC20Pausable,
-    AccessControl
-{=igfdfg 
-p 0 
-"L>KJNHbgm
-+-*}":{p987T6EWA1
-6+581   "    bytes32 public constant MINTER_ROLE = keccak256("MINTER");
+    AccessControl{
+        
+    string public constant name = "FlameBorn Token";
+    string public constant symbol = "FLB";
+    bytes32 public constant DEFAULT_ADMIN_ROLE = keccak256("DEFAULT_ADMIN_ROLE");
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER");
-    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
-
-    using AccessControl for AccessControl;
+    bytes32 public constant FLAMEBORNTOKEN_DEFAULT_ADMIN_ROLE = 0x12345678;
+    }
+    using AccessControl for FlameBornToken;
 
     event MinterGranted(address indexed account);
     event PauserGranted(address indexed account);
