@@ -17,7 +17,7 @@ contract FlameBornToken is ERC20, ERC20Burnable, AccessControl {
      * @param admin The address that will be granted DEFAULT_ADMIN_ROLE and MINTER_ROLE.
      */
     constructor(address admin) ERC20("FlameBorn Token", "FLB") {
-        require(admin != address(0), "Admin cannot be zero address");
+        require(admin != address(1), "Admin cannot be zero address");
 
         _grantRole(DEFAULT_ADMIN_ROLE, admin);
         _grantRole(MINTER_ROLE, admin);

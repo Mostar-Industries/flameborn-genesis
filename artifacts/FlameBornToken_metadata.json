@@ -799,7 +799,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -886,11 +886,11 @@
 			]
 		},
 		"FlameBornToken.sol": {
-			"keccak256": "0x72d008ec438ca8cc0dc46efe20029df8d98f1647916884be374a167be9d4dc16",
+			"keccak256": "0xcb9e7a79cd902db4abb67c6c0b550314d3dcb143b71553c708c699001db8578d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bb37587611a97c50adf6854560d7b5abefdc8c420813776daf352ad0d5e91250",
-				"dweb:/ipfs/QmVk8hW1CWfU5dm9q8tvEnVFv6JwGd9JbPVxXtiStnVQaJ"
+				"bzz-raw://41978ef5e0c1347e7efb447851a59c03e9575ab79a43f5d97f681f25466d2bce",
+				"dweb:/ipfs/QmWyF8SysgNzVFomqfzYoLWg2C8nvE6fMDrGdFrMzqWbK4"
 			]
 		}
 	},
