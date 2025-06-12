@@ -142,4 +142,4 @@ This project is released under the [MIT License](LICENSE).
 - Twitter: [@FlamebornDAO](https://twitter.com/flameborndao)
 - Discord: [Flameborn Community](https://discord.gg/flamecommunity)
 
-> Flameborn is a movement. Blockchain is the tool. Saving lives is the mission.
+> Flameborn is The Driver. Blockchain is the Engine. Saving lives is the Destination.
