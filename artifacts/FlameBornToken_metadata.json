@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -793,7 +793,7 @@
 		"compilationTarget": {
 			"FlameBornToken.sol": "FlameBornToken"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -886,11 +886,11 @@
 			]
 		},
 		"FlameBornToken.sol": {
-			"keccak256": "0xcb9e7a79cd902db4abb67c6c0b550314d3dcb143b71553c708c699001db8578d",
+			"keccak256": "0x87dddd74b61f5d17a4e1b69fda78ca5febb99d55e1ec0a6816c007bdcb4b5430",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://41978ef5e0c1347e7efb447851a59c03e9575ab79a43f5d97f681f25466d2bce",
-				"dweb:/ipfs/QmWyF8SysgNzVFomqfzYoLWg2C8nvE6fMDrGdFrMzqWbK4"
+				"bzz-raw://58d54fbb66823246c63ebb94b2398f390dc08e13a0b55f5bad150d4b2fb31e8e",
+				"dweb:/ipfs/QmRTCXBLG2kDnT9sUtaSCnnNAokfokqzj8dD82f7F6vNKW"
 			]
 		}
 	},

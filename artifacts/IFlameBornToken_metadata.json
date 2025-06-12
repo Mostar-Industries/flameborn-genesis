@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -39,24 +39,24 @@
 		"compilationTarget": {
 			"FlameBornMinter.sol": "IFlameBornToken"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"FlameBornMinter.sol": {
-			"keccak256": "0x4b06bd6887d2b62846a66da9f32f77e9418fd202baec76717133b5bb9e58a340",
+			"keccak256": "0xad81666b99b8397d297489431ae650007821aecea742c7d54124d54c1f36b07f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://447841bc54f5ccac02f845e2814843ff91ed79ea99ae850290643bf942691837",
-				"dweb:/ipfs/Qma87pC75kykqaTXeGVpJ9dyuGGwHtC51NFxawzjXMSHDV"
+				"bzz-raw://158c17ba699f6c9eea3dea51a2a9d092178f32af04281a95e5b57b74b571e124",
+				"dweb:/ipfs/QmWFgG4tcpr5jgRRaibS3h6qz9ASWBFc3m82gdjM4m6KjL"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.0.0/contracts/access/AccessControl.sol": {
