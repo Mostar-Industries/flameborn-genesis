@@ -613,7 +613,7 @@
 			}
 		],
 		"devdoc": {
-			"details": "Uses OpenZeppelin v5.0.0. No unbounded storage ops.",
+			"details": "Built with OpenZeppelin 5.0.0 contracts. Deployed for Flameborn Network initiatives.",
 			"errors": {
 				"AccessControlBadConfirmation()": [
 					{
@@ -714,7 +714,7 @@
 				},
 				"constructor": {
 					"params": {
-						"admin": "Address that will hold admin and minter rights."
+						"admin": "The address that will be granted DEFAULT_ADMIN_ROLE and MINTER_ROLE."
 					}
 				},
 				"decimals()": {
@@ -730,10 +730,10 @@
 					"details": "Returns `true` if `account` has been granted `role`."
 				},
 				"mint(address,uint256)": {
-					"details": "Caller must have MINTER_ROLE.",
+					"details": "Only callable by accounts with MINTER_ROLE.",
 					"params": {
-						"amount": "Amount of tokens (in wei) to mint.",
-						"to": "Address receiving the minted tokens."
+						"amount": "Token amount to mint (in wei).",
+						"to": "Address receiving the tokens."
 					}
 				},
 				"name()": {
@@ -746,7 +746,12 @@
 					"details": "Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role. May emit a {RoleRevoked} event."
 				},
 				"supportsInterface(bytes4)": {
-					"details": "See {IERC165-supportsInterface}."
+					"params": {
+						"interfaceId": "The interface identifier."
+					},
+					"returns": {
+						"_0": "True if interface is supported."
+					}
 				},
 				"symbol()": {
 					"details": "Returns the symbol of the token, usually a shorter version of the name."
@@ -767,14 +772,20 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {
+				"MINTER_ROLE()": {
+					"notice": "Hash of the role that allows minting"
+				},
 				"constructor": {
-					"notice": "Constructor to initialize FLB and set admin + minter roles."
+					"notice": "Deploys the FLB token and assigns roles."
 				},
 				"mint(address,uint256)": {
-					"notice": "Mints FLB tokens to a given address."
+					"notice": "Mint new FLB tokens to a specified address."
+				},
+				"supportsInterface(bytes4)": {
+					"notice": "Returns true if this contract implements the interface defined by interfaceId."
 				}
 			},
-			"notice": "Minimal and secure BEP-20 implementation with minting and burning.",
+			"notice": "ERC-20 token with minting, burning, and access control.",
 			"version": 1
 		}
 	},
@@ -875,11 +886,11 @@
 			]
 		},
 		"FlameBornToken.sol": {
-			"keccak256": "0x62289bbf37ecc03e060869d1e3bbb860be52f12c7eee113a7997c768446aff84",
+			"keccak256": "0x5ab4b626114553971cf55ee6d61526cc30df34ef3dba66edb05cc62cde57a41a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://097a163b5e8c200ca54d4017e76ade033ff99edafcb611f1a0b9966828b824f7",
-				"dweb:/ipfs/QmZMjiY4mTEVzGKtmxX4nGapPYJ1yw1wVPbqTdaLMvad1x"
+				"bzz-raw://ca68d8890283a1b75b803b24c6cffab1b020c48a6012988a50201c68b625911e",
+				"dweb:/ipfs/QmbieVXFoPKDYBDijuWnpRNLNyQnzb5TnjGYYiXX7Xsw5b"
 			]
 		}
 	},
