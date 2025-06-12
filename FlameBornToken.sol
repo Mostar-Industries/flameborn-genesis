@@ -23,7 +23,7 @@ contract FlameBornToken is ERC20, ERC20Burnable, AccessControl {
         _grantRole(MINTER_ROLE, admin);
 
         // Optional: Mint initial supply for bootstrap operations
-        _mint(admin, 1_000_000 * 10 ** decimals());
+        _mint(admin, 1_000_000 * 18 ** decimals());
     }
 
     /**

@@ -886,11 +886,11 @@
 			]
 		},
 		"FlameBornToken.sol": {
-			"keccak256": "0x5ab4b626114553971cf55ee6d61526cc30df34ef3dba66edb05cc62cde57a41a",
+			"keccak256": "0x72d008ec438ca8cc0dc46efe20029df8d98f1647916884be374a167be9d4dc16",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca68d8890283a1b75b803b24c6cffab1b020c48a6012988a50201c68b625911e",
-				"dweb:/ipfs/QmbieVXFoPKDYBDijuWnpRNLNyQnzb5TnjGYYiXX7Xsw5b"
+				"bzz-raw://bb37587611a97c50adf6854560d7b5abefdc8c420813776daf352ad0d5e91250",
+				"dweb:/ipfs/QmVk8hW1CWfU5dm9q8tvEnVFv6JwGd9JbPVxXtiStnVQaJ"
 			]
 		}
 	},
